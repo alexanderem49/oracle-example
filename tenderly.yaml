@@ -1,0 +1,21 @@
+account_id: ""
+actions:
+  alexanderem48/project:
+    runtime: v2
+    sources: actions
+    specs:
+      example:
+        description: Bridge price info of token to Sepolia.
+        function: index:main
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 11155111
+                eventEmitted:
+                  contract:
+                    address: 0x30F7CB20A832ffa3459772555C37fBA5402a6248
+                  name: PriceRequested
+project_slug: ""
