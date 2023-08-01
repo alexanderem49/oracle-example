@@ -4,8 +4,8 @@ actions:
     runtime: v2
     sources: actions
     specs:
-      example:
-        description: Bridge price info of token to Sepolia.
+      price-oracle-polygon:
+        description: Post price info of the tokens to Polygon.
         function: index:main
         trigger:
           type: transaction
@@ -13,9 +13,9 @@ actions:
             status:
               - mined
             filters:
-              - network: 11155111
+              - network: 137
                 eventEmitted:
                   contract:
-                    address: 0x30F7CB20A832ffa3459772555C37fBA5402a6248
+                    address: 0x17F049427BCf2743f7ef6c05AcB58f203478382C
                   name: PriceRequested
 project_slug: ""

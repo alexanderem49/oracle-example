@@ -8,6 +8,7 @@
     },
     "dependencies": {
         "@tenderly/actions": "^0.1.0",
+        "axios": "^1.3.6",
         "ethers": "^5.4.7"
     },
     "private": true

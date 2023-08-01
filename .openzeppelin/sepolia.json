@@ -1,0 +1,397 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x82Fc0dEBfEF5B99dcdbE498Bdb84D664D64b08fc",
+      "txHash": "0x955d419845cbe6f7a871a1ce926fb815ca623deeceb85195f34fedd0fdbc5040",
+      "kind": "uups"
+    },
+    {
+      "address": "0x66c78722CDc286d4274E25dE115C52B0c789645D",
+      "txHash": "0xb221885c9674b583674c57d0d37f2bdfcec9ccbabd008a529da45d055b75f151",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "c8eaab8db36df72e221abfb425e6985c4f09223be516520978e1212403b6769e": {
+      "address": "0x33923FE43209f43918becD01a83E032a5690F313",
+      "txHash": "0x44f2797ebb5b13432a288e402dcbad6a354385fd840df493431325355970479c",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_exchangePriceOracle",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(ExchangeOracle)3289",
+            "contract": "ExchangeOracleLibraryUpgradeable",
+            "src": "contracts/ExchangeOracleLibraryUpgradeable.sol:10"
+          },
+          {
+            "label": "_dataDeadline",
+            "offset": 20,
+            "slot": "101",
+            "type": "t_uint96",
+            "contract": "ExchangeOracleLibraryUpgradeable",
+            "src": "contracts/ExchangeOracleLibraryUpgradeable.sol:11"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ExchangeOracleLibraryUpgradeable",
+            "src": "contracts/ExchangeOracleLibraryUpgradeable.sol:102"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "successLast",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_bool",
+            "contract": "OracleClient",
+            "src": "contracts/OracleClient.sol:16"
+          },
+          {
+            "label": "resultLast",
+            "offset": 1,
+            "slot": "252",
+            "type": "t_uint224",
+            "contract": "OracleClient",
+            "src": "contracts/OracleClient.sol:17"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ExchangeOracle)3289": {
+            "label": "contract ExchangeOracle",
+            "numberOfBytes": "20"
+          },
+          "t_uint224": {
+            "label": "uint224",
+            "numberOfBytes": "28"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_uint96": {
+            "label": "uint96",
+            "numberOfBytes": "12"
+          }
+        }
+      }
+    },
+    "b962598a3e2910d215e4209f35a3663ecd3e48b533563f6115f75b3e6c3d1046": {
+      "address": "0x61addA60163862bA78B9F5166962dA60DADf3224",
+      "txHash": "0x910783c495d537a63752e7e764fa25aa2d746923f69c9a72bbafb3b97291dc6f",
+      "layout": {
+        "solcVersion": "0.6.12",
+        "storage": [
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:581"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:583"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:585"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:587"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:588"
+          },
+          {
+            "label": "_decimals",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint8",
+            "contract": "ERC20",
+            "src": "contracts/USDC.sol:589"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)1545_storage)",
+            "contract": "AccessControl",
+            "src": "contracts/USDC.sol:1280"
+          },
+          {
+            "label": "_revertMsg",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_string_storage",
+            "contract": "AccessControlMixin",
+            "src": "contracts/USDC.sol:1476"
+          },
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/USDC.sol:1503"
+          },
+          {
+            "label": "DOMAIN_SEPARATOR",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_bytes32",
+            "contract": "EIP712Domain",
+            "src": "contracts/USDC.sol:1688"
+          },
+          {
+            "label": "_nonces",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Nonces",
+            "src": "contracts/USDC.sol:1702"
+          },
+          {
+            "label": "_authorizationStates",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_mapping(t_address,t_mapping(t_bytes32,t_enum(AuthorizationState)2360))",
+            "contract": "GasAbstraction",
+            "src": "contracts/USDC.sol:1943"
+          },
+          {
+            "label": "_blacklisted",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "Blacklistable",
+            "src": "contracts/USDC.sol:2572"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_bool",
+            "contract": "Pausable",
+            "src": "contracts/USDC.sol:2641"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(AuthorizationState)2360": {
+            "label": "enum GasAbstraction.AuthorizationState",
+            "members": [
+              "Unused",
+              "Used",
+              "Canceled"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_bytes32,t_enum(AuthorizationState)2360))": {
+            "label": "mapping(address => mapping(bytes32 => enum GasAbstraction.AuthorizationState))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_enum(AuthorizationState)2360)": {
+            "label": "mapping(bytes32 => enum GasAbstraction.AuthorizationState)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)1545_storage)": {
+            "label": "mapping(bytes32 => struct AccessControl.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AddressSet)1326_storage": {
+            "label": "struct EnumerableSet.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)1146_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(RoleData)1545_storage": {
+            "label": "struct AccessControl.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_struct(AddressSet)1326_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Set)1146_storage": {
+            "label": "struct EnumerableSet.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

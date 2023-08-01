@@ -5,6 +5,8 @@
     "hardhat": "^2.13.0"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.2"
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/contracts-upgradeable": "^4.9.0",
+    "@openzeppelin/hardhat-upgrades": "^1.27.0"
   }
 }

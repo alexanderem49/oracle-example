@@ -1,0 +1,18 @@
+{
+    "skipSlots" : [
+        {
+            "token": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+            "slot": 12
+        }
+    ],
+    "decimalsOverride": [
+        {
+            "token" : "0x1C480521100c962F7da106839a5A504B5A7457a1",
+            "decimals" : 6
+        },
+        {
+            "token" : "0x2F4BBA9fC4F77F16829F84181eB7C8b50F639F95",
+            "decimals" : 6
+        }
+    ]
+}
